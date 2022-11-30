@@ -239,7 +239,9 @@ h2 {
   flex-direction: row;
   gap: 30px;
 }
-
+.no-padding-top {
+  padding-top: 0px;
+}
 .section:first-child {
   padding-bottom: 0;
 }
@@ -277,6 +279,9 @@ h2 {
   flex-direction: row;
   gap: 30px;
   margin-top: 50px;
+}
+.images-list > li {
+  height: 294px;
 }
 .service {
   position: relative;
@@ -377,10 +382,12 @@ h2 {
 }
 
 .clients {
+  width: 1170px;
   display: flex;
   flex-direction: row;
   gap: 30px;
-  width: 1170px;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients-icons {
@@ -627,7 +634,7 @@ footer {
   margin-top: 4px;
 }
 
-.images-list {
+.images-list-portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -679,7 +686,7 @@ figure > .project-images {
   padding-bottom: 49px;
   line-height: 28px;
 }
-.overlay-box:hover .overlay {
+.images-list-item:hover .overlay {
   transform: translatey(0);
 }
 /*===== OKNO MODALNE ===== */
@@ -708,21 +715,16 @@ figure > .project-images {
 }
 .close-btn {
   position: absolute;
-  right: 8px;
-  top: 8px;
+  right: 9px;
+  top: 9px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   cursor: pointer;
   width: 30px;
   height: 30px;
-  cursor: pointer;
 }
-.close-btn:hover {
-  color: var(--blue);
-  border: 1px solid var(--blue);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .is-hidden {
   background-color: rgba(0, 0, 0, 0.2);
   visibility: hidden;

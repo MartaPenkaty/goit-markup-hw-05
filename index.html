@@ -24,7 +24,7 @@
         </div>
             <nav class="navigation">
             <ul class="navigation-list">
-              <li class="navigation-list-item underline">Agencja</li>
+              <li class="navigation-list-item underline"><a class="navigation-list-item-link" href="index.html">Agencja</a></li>
               <li class="navigation-list-item"><a class="navigation-list-item-link" href="portfolio.html"> Portfolio</a></li>
               <li class="navigation-list-item">Kontakt</li>
             </ul>
@@ -64,7 +64,11 @@
         <button class="main-btn" type="button" data-modal-open>Zamów usługe</button>
           <div class="backdrop is-hidden"data-modal>
             <div class="modal">
-              <button type="button" class="close-btn" data-modal-close>x</button>
+              <button type="button" class="close-btn" data-modal-close>
+                <svg width="11px" height="11px">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -334,9 +338,9 @@
         </ul>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-            <h2 class="our-clients">Nasi klienci</h2>
+      <section class="section no-padding-top">
+        <div class="container ">
+            <h2 class="our-clients ">Nasi klienci</h2>
             <ul class="clients">
               <li class="clients-icons">
                  <svg width="106px" height="60px">
